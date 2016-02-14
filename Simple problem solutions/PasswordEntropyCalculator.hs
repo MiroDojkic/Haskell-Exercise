@@ -1,4 +1,4 @@
-<module PasswordEntropyCalculator
+module PasswordEntropyCalculator
 (calculateEntropy,
     calculatePossibleSymbols,
     addNumberFactor,
