@@ -1,7 +1,7 @@
-module suffixes
+module Suffixes
     where
 
 suffixes :: [a] -> [[a]]
 suffixes [] = [[]]
-suffixes [x] = [[x]]
+suffixes [a] = [[a]]
 suffixes xxs@(x:xs) =  [xxs] ++ (suffixes xs) 
