@@ -1,6 +1,10 @@
-caesarCipher :: [Char] -> Int -> [Char]
-caesarCipher [] _ = []
-caesarCipher (s:ss) n = (rotate s n) : (caesarCipher ss n)
+module CaesarCipher
+(encrypt)
+where
+
+encrypt :: [Char] -> Int -> [Char]
+encrypt [] _ = []
+encrypt (s:ss) n = (rotate s n):(encrypt ss n)
 
 rotate :: Char -> Int -> Char
 rotate s' 0 = s'
